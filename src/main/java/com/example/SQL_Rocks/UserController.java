@@ -2,7 +2,6 @@ package com.example.SQL_Rocks;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -17,7 +16,7 @@ public class UserController {
         return userService.addUser(user);
     }
 
-    //we are getting the user using the id number
+    //we are getting the user using the id no
     @GetMapping("/getUser")
     public User getUser(@RequestParam("id") int id){
         return userService.getUser(id);
