@@ -16,7 +16,7 @@ public class UserController {
         return userService.addUser(user);
     }
 
-    //we are getting the user using the id no
+    
     @GetMapping("/getUser")
     public User getUser(@RequestParam("id") int id){
         return userService.getUser(id);
